@@ -50,14 +50,8 @@ public class Gcd{
      return ans;
     }
     public static void main(String args[]){
-      int n =121;
-      int a =0;
-      while(n!=0){
-        int digit = n%10;
-        a = a*10 + digit;
-        n = n/10;
-      }
-     
-        System.out.print(a);
+      int n =-5;
+      System.err.println(n/-1);
+      
     }
 }
