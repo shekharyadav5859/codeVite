@@ -24,6 +24,7 @@ public class FirstDay {
  
     public static void main(String args[]){
 
+    Node head = 
 
 
 
@@ -31,21 +32,6 @@ public class FirstDay {
 
 
 
-
-        LinkedList<Integer>list = new LinkedList<>();
-        Scanner sc = new Scanner(System.in);
-        System.out.print("enter the List size");
-        int n = sc.nextInt();
-        for(int i=1; i<=n; i++){
-        System.out.println("enter the Node");
-         int num = sc.nextInt();
-         list.add(num);
-        }
-
-        System.out.print(list.size());
-        while(list != null){
-            
-        }
 
     }
     
