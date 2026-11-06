@@ -24,11 +24,21 @@ public class FirstDay {
  
     public static void main(String args[]){
 
-    Node head = 
+   String str = "()";
+   String ans = "";
+   int j=0;
+   for(int i=0; i<6; i++){
+      if(j>=str.length()){
+        j=0;
+      }
+      ans+=str.charAt(j);
+      j++;
+
+   } 
 
 
 
-
+System.out.println(ans);
 
 
 
