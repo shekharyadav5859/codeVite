@@ -37,6 +37,43 @@ public class graph{
          } 
          
         }
+//weigth graph //Dreced
+    static class EdgeW{
+        int v;
+        int u;
+         int w;
+         public EdgeW(int v ,int u, int w){
+            this.v =v;
+            this.u = u;
+            this.w = w;
+         }
+    }  
+    public static void Wgraph(int ver , int ed ,Scanner sc){
+    List<EdgeW>graph[] = new ArrayList[ver];
+    for(int i=0; i<ver; i++){
+        graph[i] = new ArrayList<EdgeW>();
+    }
+    for(int i=0; i<ed; i++){
+        System.out.println("enter Src");
+        int v =sc.nextInt();
+        System.out.println("Enter dest");
+        int u =sc.nextInt();
+        System.out.println("Enter Weigth");
+        int w =sc.nextInt();
+
+        graph[v].add(new EdgeW(v, u ,w));
+    }
+    for(int i=0; i<graph.length; i++){
+        System.out.println(i+"->");
+        for(EdgeW edgeW:graph[i]){
+            System.out.print(edgeW.u +" "+ edgeW.w);
+
+        }
+        System.out.println();
+    }
+
+    }
+
     public static void main(String args[]){
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter the Edges of Number");
@@ -44,7 +81,7 @@ public class graph{
     System.out.println("Enter the Number of Vertex");
     int v =sc.nextInt();
 
-      gra(e ,v ,sc);
+     Wgraph(v, e, sc);
       sc.close();
     }
 }
